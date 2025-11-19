@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS Position</title>
+        <link rel="stylesheet" type="text/css" href="stylePosition.css" />
+    </head>
+    <body>
+        <div class="relative">This element is positioned using: relative;</div>
+
+        <br /><br /><br />
+
+        <h2>Position: fixed;</h2>
+        <p>
+            An HTML element with position: fixed will stay in the same place even when the page is
+            scrolled. The properties left, bottom, top, and right apply to fixed positioning.
+        </p>
+
+        <div class="fixed">This element is positioned using: fixed;</div>
+
+        <br /><br /><br /><br /><br /><br />
+
+        <h2>Position: absolute;</h2>
+        <p>
+            An HTML element using position: absolute will be positioned relative to the nearest
+            positioned ancestor element, not the screen.
+        </p>
+
+        <div class="relative1">
+            This element is positioned using: relative;
+            <div class="absolute">This element is positioned using: absolute;</div>
+        </div>
+
+        <br /><br /><br /><br /><br />
+
+        <h2>Position: sticky;</h2>
+        <p>Try to <b>scroll</b> to see how sticky positioning works.</p>
+        <p>Note: IE/Edge 15 and older versions do not support sticky.</p>
+
+        <div class="sticky">Hello, I am sticky!</div>
+
+        <div style="padding-bottom: 2000px">
+            <p>
+                In this example, the sticky element sticks to the top of the page (top: 0) when it
+                reaches its scroll position.
+            </p>
+            <p>Try scrolling.</p>
+
+            <p>
+                Try scrolling... Lorem ipsum dolor sit amet, illum definitiones no quo,
+                concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam
+                omnis affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
+                molestiae vix, graeci persecuti...
+            </p>
+
+            <p>
+                Try scrolling... Lorem ipsum dolor sit amet, illum definitiones no quo,
+                concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam
+                omnis affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
+                molestiae vix, graeci persecuti...
+            </p>
+        </div>
+    </body>
+</html>

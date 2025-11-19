@@ -1,0 +1,10 @@
+.text_color {
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.paragraph_one {
+    text-decoration: underline;
+    letter-spacing: 5px;
+}
