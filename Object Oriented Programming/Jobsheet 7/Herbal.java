@@ -1,31 +1,32 @@
-public class Herbal extends Tanaman {
-    private String manfaat;
+public class Herbal extends Plant {
+    private String benefit;
 
     public Herbal() {
         super();
-        this.manfaat = "belum diketahui";
+        this.benefit = "unknown";
     }
 
-    public Herbal(String nama, String warna, int ukuran, String manfaat) {
-        super(nama, warna, ukuran); // memanggil konstruktor si parent
-        this.manfaat = manfaat;
+    public Herbal(String name, String color, int size, String benefit) {
+        super(name, color, size);
+        this.benefit = benefit;
     }
 
-    public void setManfaat(String m) {
-        this.manfaat = m;
+    public void setBenefit(String benefit) {
+        this.benefit = benefit;
     }
 
-    public String getManfaat() {
-        return manfaat;
+    public String getBenefit() {
+        return benefit;
     }
 
-    public void menjadiObat() {
-        System.out.println("Bermanfaat untuk " + manfaat);
+    public void convertToMedicine() {
+        System.out.println("Useful for: " + benefit);
     }
 
-    //overiding
+    // Overriding
+    @Override
     public void displayInfo() {
         super.displayInfo();
-        System.out.println("Manfaat : " + manfaat);
+        System.out.println("Benefit: " + benefit);
     }
 }

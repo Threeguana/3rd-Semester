@@ -6,11 +6,11 @@ public class DemoLibrary {
         Book book3 = new Book("Kimia", "Andi", "2010");
 
         Borrow br1 = new Borrow(mhs1);
-        br1.borrowedBook(book1);
-        br1.borrowedBook(book3);
-        br1.borrowedBook(book2);
+        br1.borrowBook(book1);
+        br1.borrowBook(book3);
+        br1.borrowBook(book2);
 
         br1.returnBook(book1);
-        br1.showBr();
+        br1.showBorrowedBook();
     }
 }

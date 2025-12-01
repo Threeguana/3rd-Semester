@@ -1,13 +1,14 @@
 public class Demo {
     public static void main(String[] args) {
+
         Herbal h1 = new Herbal();
-        h1.setNama("Jahe");
-        h1.setWarna("Merah muda");
-        h1.setManfaat("Meredakan radang");
-        h1.setUkuran(20);
+        h1.setName("Ginger");
+        h1.setColor("Pink");
+        h1.setSize(20);
+        h1.setBenefit("Reduces inflammation");
 
         h1.displayInfo();
-        h1.disiram();
-        h1.menjadiObat();
+        h1.water();
+        h1.convertToMedicine();
     }
 }
