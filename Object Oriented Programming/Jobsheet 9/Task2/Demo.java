@@ -2,19 +2,20 @@ package Task2;
 
 public class Demo {
     public static void main(String[] args) {
-        MainChar hero = new MainChar("Ares", "Api", "unknown");
-        hero.setSenjata("Pedang");
-        hero.tampilInfo();
-        hero.sihirSerang();
-        hero.serangFisik();
-        hero.sihirBertahan();
-        hero.bertahanFisik();
+
+        MainCharacter hero = new MainCharacter("Ares", "Fire", "Unknown");
+        hero.setWeapon("Sword");
+        hero.showInfo();
+        hero.castOffensiveMagic();
+        hero.attackPhysical();
+        hero.castDefensiveMagic();
+        hero.defendPhysical();
 
         System.out.println();
 
-        SideChar mage = new SideChar("Lyra", "Angin", "Elf");
-        mage.tampilInfo();
-        mage.sihirSerang();
-        mage.sihirBertahan();
+        SideCharacter mage = new SideCharacter("Lyra", "Wind", "Elf");
+        mage.showInfo();
+        mage.castOffensiveMagic();
+        mage.castDefensiveMagic();
     }
 }
