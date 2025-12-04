@@ -1,32 +1,32 @@
-public class SmartFridge extends AlatElektronik implements IAudible{
+public class SmartFridge extends ElectronicDevice implements IAudible {
     private int volume;
 
-    public SmartFridge(int volume, double harga, String warna, String merk){
-        super(harga, warna, merk);
+    public SmartFridge(int volume, double price, String color, String brand) {
+        super(price, color, brand);
         this.volume = volume;
     }
 
-    public int getVolume(){
+    public int getVolume() {
         return volume;
     }
 
-    public void setVolume(int volume){
+    public void setVolume(int volume) {
         this.volume = volume;
     }
 
     @Override
-    public void naikkanVolume(int increment){
+    public void increaseVolume(int increment) {
         volume += increment;
     }
 
     @Override
-    public void turunkanVolume(int decrement){
+    public void decreaseVolume(int decrement) {
         volume -= decrement;
     }
 
     @Override
-    public void getInfo(){
+    public void getInfo() {
         super.getInfo();
-        System.out.println("Volume : " + getVolume());
+        System.out.println("Volume: " + getVolume());
     }
 }
