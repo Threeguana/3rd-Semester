@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch Case Example</title>
+</head>
+<body>
+    <script>
+        const choice = prompt("You are lucky! Please choose a number (1-5):");
+        let prize = "";
+
+        switch (choice) {
+            case "1":
+                prize = "tissue";
+                break;
+            case "2":
+                prize = "coffee box";
+                break;
+            case "3":
+                prize = "sticker";
+                break;
+            case "4":
+                prize = "cooking oil";
+                break;
+            case "5":
+                prize = "50k cash";
+                break;
+            default:
+                document.write("<p>Oops! You chose incorrectly.</p>");
+        }
+
+        if (prize === "") {
+            document.write("<p>You did not win a prize.</p>");
+        } else {
+            document.write("<h2>Congratulations! You got " + prize + ".</h2>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ternary Statement Example</title>
+</head>
+<body>
+    <script>
+        const username = prompt("Username:");
+        const password = prompt("Password:");
+
+        document.write(
+            username === "student"
+                ? (password === "coffee"
+                    ? "<h2>Welcome!</h2>"
+                    : "<p>Incorrect password, try again!</p>")
+                : "<p>You are not registered!</p>"
+        );
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Functions</title>
+    <script>
+        // Create functions
+        const sayHello = () => alert("Hello, world!");
+
+        function total(a, b) {
+            return a + b;
+        }
+    </script>
+</head>
+<body>
+    <!-- Call the function when the link is clicked -->
+    <a href="#" onclick="sayHello()">Click here!</a>
+
+    <p id="result"></p>
+
+    <script>
+        document.getElementById("result").textContent = total(2, 3);
+    </script>
+</body>
+</html>
