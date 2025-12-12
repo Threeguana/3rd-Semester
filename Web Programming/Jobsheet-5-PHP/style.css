@@ -1,0 +1,17 @@
+/* Make table borders collapse into a single border and remove spacing */
+table {
+    border-collapse: collapse;
+    width: 100%; /* Full width */
+    border: 1px solid #ddd; /* Light gray border */
+}
+
+/* Style table header and cells */
+th, td {
+    text-align: left; /* Align text to left */
+    padding: 16px;    /* Add spacing inside cells */
+}
+
+/* Alternate row background for better readability */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
