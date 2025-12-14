@@ -10,7 +10,7 @@
         // Set the default timezone to Jakarta
         date_default_timezone_set("Asia/Jakarta");
 
-        // Display the current time in 12-hour format
+        // Display the current time in 12-hour format am/pm
         echo date("h:i:sa");
     ?>
 </body>
